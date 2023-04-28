@@ -1,10 +1,15 @@
 <template>
   <nav id="nav">
-    <p class="logo">The Vue School Travel App</p>
+    <p class="logo">VUEJS ROUTER CONCEPT</p>
     <ul class="nav-links">
       <li class="links">
         <router-link to="/">
           Home
+        </router-link>
+      </li>
+      <li class="links">
+        <router-link to="spinner">
+          Spinner
         </router-link>
       </li>
       <li
@@ -23,6 +28,9 @@
       </li>
       <li class="links">
         <router-link to="/user">Dashboard</router-link>
+      </li>
+      <li class="links">
+        <router-link to="/invoice">Invoice</router-link>
       </li>
     </ul>
   </nav>

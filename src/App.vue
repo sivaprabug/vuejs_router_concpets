@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <TheNavigation />
+    <Loader />
     <transition name="fade" mode="out-in">
       <router-view :key="$route.path" />
     </transition>
@@ -8,10 +9,12 @@
 </template>
 <script>
 import TheNavigation from "@/components/TheNavigation";
+import Loader from "@/components/Loader";
 
 export default {
   components: {
-    TheNavigation
+    TheNavigation,
+    Loader
   }
 };
 </script>
